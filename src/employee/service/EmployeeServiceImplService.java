@@ -1,5 +1,5 @@
 
-package webservice;
+package employee.service;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -17,14 +17,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "EmployeeServiceImplService", targetNamespace = "http://WebService/", wsdlLocation = "http://localhost:8080/employee?wsdl")
+@WebServiceClient(name = "EmployeeServiceImplService", targetNamespace = "http://service.Employee/", wsdlLocation = "http://localhost:8080/employee?wsdl")
 public class EmployeeServiceImplService
     extends Service
 {
 
     private final static URL EMPLOYEESERVICEIMPLSERVICE_WSDL_LOCATION;
     private final static WebServiceException EMPLOYEESERVICEIMPLSERVICE_EXCEPTION;
-    private final static QName EMPLOYEESERVICEIMPLSERVICE_QNAME = new QName("http://WebService/", "EmployeeServiceImplService");
+    private final static QName EMPLOYEESERVICEIMPLSERVICE_QNAME = new QName("http://service.Employee/", "EmployeeServiceImplService");
 
     static {
         URL url = null;
@@ -69,7 +69,7 @@ public class EmployeeServiceImplService
      */
     @WebEndpoint(name = "EmployeeServiceImplPort")
     public EmployeeServiceImpl getEmployeeServiceImplPort() {
-        return super.getPort(new QName("http://WebService/", "EmployeeServiceImplPort"), EmployeeServiceImpl.class);
+        return super.getPort(new QName("http://service.Employee/", "EmployeeServiceImplPort"), EmployeeServiceImpl.class);
     }
 
     /**
@@ -81,7 +81,7 @@ public class EmployeeServiceImplService
      */
     @WebEndpoint(name = "EmployeeServiceImplPort")
     public EmployeeServiceImpl getEmployeeServiceImplPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://WebService/", "EmployeeServiceImplPort"), EmployeeServiceImpl.class, features);
+        return super.getPort(new QName("http://service.Employee/", "EmployeeServiceImplPort"), EmployeeServiceImpl.class, features);
     }
 
     private static URL __getWsdlLocation() {

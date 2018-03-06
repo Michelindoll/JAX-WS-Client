@@ -1,6 +1,6 @@
-import webservice.Employee;
-import webservice.EmployeeServiceImpl;
-import webservice.EmployeeServiceImplService;
+import employee.service.Employee;
+import employee.service.EmployeeServiceImpl;
+import employee.service.EmployeeServiceImplService;
 
 public class Main {
     public static void main(String[] args) {

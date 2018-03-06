@@ -1,5 +1,5 @@
 
-package webservice;
+package employee.service;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -17,7 +17,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "EmployeeServiceImpl", targetNamespace = "http://WebService/")
+@WebService(name = "EmployeeServiceImpl", targetNamespace = "http://service.Employee/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -28,13 +28,13 @@ public interface EmployeeServiceImpl {
      * 
      * @param arg0
      * @return
-     *     returns webservice.Employee
+     *     returns employee.service.Employee
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getEmployeeById", targetNamespace = "http://WebService/", className = "webservice.GetEmployeeById")
-    @ResponseWrapper(localName = "getEmployeeByIdResponse", targetNamespace = "http://WebService/", className = "webservice.GetEmployeeByIdResponse")
-    @Action(input = "http://WebService/EmployeeServiceImpl/getEmployeeByIdRequest", output = "http://WebService/EmployeeServiceImpl/getEmployeeByIdResponse")
+    @RequestWrapper(localName = "getEmployeeById", targetNamespace = "http://service.Employee/", className = "employee.service.GetEmployeeById")
+    @ResponseWrapper(localName = "getEmployeeByIdResponse", targetNamespace = "http://service.Employee/", className = "employee.service.GetEmployeeByIdResponse")
+    @Action(input = "http://service.Employee/EmployeeServiceImpl/getEmployeeByIdRequest", output = "http://service.Employee/EmployeeServiceImpl/getEmployeeByIdResponse")
     public Employee getEmployeeById(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);
